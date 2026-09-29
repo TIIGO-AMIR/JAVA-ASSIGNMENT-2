@@ -1,0 +1,33 @@
+/*SNIPLET A
+ Error : the code uses "=" instead of "==" at if (hasPaidFees = true) . The correct code should be:
+ */
+ boolean hasPaidFees = false;
+
+if (hasPaidFees == true) {
+    System.out.println("Access granted.");
+} else {
+    System.out.println("Access denied.");
+}
+
+/* SNIPLET B    
+ Error: The switch cases are missing break statements. The correct code should be:
+ */
+ int option = 2;
+
+switch (option) {
+
+    case 1:
+        System.out.println("Deposit");
+        break;
+
+    case 2:
+        System.out.println("Withdraw");
+        break;
+
+    case 3:
+        System.out.println("Balance");
+        break;
+
+    default:
+        System.out.println("Invalid option.");
+}
